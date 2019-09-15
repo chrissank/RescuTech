@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- SEO Section -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ResqU - Check In</title>
+    <!-- Bootstrap Base -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!-- MDBoostrap -->
+    <link href="https://cdn.mkn.cx/MDB/css/mdb.min.css" rel="stylesheet">
+    <!-- Fontawesome icons -->
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <!-- Index styling -->
+    <link href="assets/css/index.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark z-depth-0" id="navbar">
+        <a class="navbar-brand" href="index.html">
+            ResQU
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        <i class="fas fa-cog"></i> Create
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row mt-4 justify-content-center">
+            <div class="col-xs-12 col-sm-10 col-md-9 col-lg-7 col-xl-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">ResqUTech Check-in!</h5>
+                        <p class="text-muted">Your disaster</p>
+                        <select class="browser-default custom-select my-3" id="disaster_list">
+                            <option selected>Open this select menu</option>
+                        </select>
+                        <div class="md-form mb-2">
+                            <input type="text" id="name" class="form-control">
+                            <label for="name">Your name</label>
+                        </div>
+                        <div>
+                            <label for="name" class="pt-2 mb-0">Your party/group</label>
+                            <div class="row" id="ppl">
+                                <div class="col-4">
+                                    <div class="md-form my-0 py-0">
+                                        <input type="number" id="kids" class="form-control">
+                                        <label for="kids">Kids</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="md-form my-0 py-0">
+                                        <input type="number" id="adults" class="form-control">
+                                        <label for="adults">Adult</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="md-form my-0 py-0">
+                                        <input type="number" id="other" class="form-control">
+                                        <label for="other">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md-form mt-1">
+                            <input type="text" id="loc" class="form-control">
+                            <label for="loc">Describe your current location</label>
+                        </div>
+                        <p class="text-muted">Condition of current shelter</p>
+                        <div class="d-flex justify-content-center my-4">
+                            <span class="font-weight-bold purple-text mr-2 mt-1">0</span>
+                            <span class="range-field w-75">
+                                <input class="border-0" type="range" min="0" max="10" id="condition" />
+                            </span>
+                            <span class="font-weight-bold purple-text ml-2 mt-1">10</span>
+                        </div>
+                        <p class="text-muted">Severity of your condition</p>
+                        <div class="d-flex justify-content-center my-4">
+                            <span class="font-weight-bold purple-text mr-2 mt-1">0</span>
+                            <span class="range-field w-75">
+                                <input class="border-0" type="range" min="0" max="10" id="sev" />
+                            </span>
+                            <span class="font-weight-bold purple-text ml-2 mt-1">10</span>
+                        </div>
+                        <div class="form-check pl-1">
+                            <input type="checkbox" class="form-check-input" id="emerg">
+                            <label class="form-check-label" for="emerg">Is there an emergency?</label>
+                        </div>
+                        <button class="btn btn-danger float-right" onclick="submit()">Submit Check-In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdn.mkn.cx/MDB/js/mdb.min.js"></script>
+    <!-- Custom functions or calls -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+    <script src="checkin.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ResquDrone</string>
+    <string name="loginTitle">ResquDrone Login</string>
+    <string name="email">Your disaster\'s email</string>
+    <string name="passInfo">Your disaster\'s password</string>
+    <string name="login">Login</string>
+    <string name="status">Status: NOT READY TO FLY</string>
+    <string name="droneID">Input the DroneID</string>
+    <string name="mainTitle">ResquDrone</string>
+    <string name="activate_button">TOGGLE ACTIVE</string>
+</resources>

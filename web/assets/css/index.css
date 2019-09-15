@@ -1,0 +1,65 @@
+.navbar {
+    background: linear-gradient(40deg, rgba(0, 51, 199, .9), rgba(209, 149, 249, .9));
+    height: 60px;
+}
+
+.full-gradient {
+    background: linear-gradient(40deg, rgba(0, 51, 199, 0.7), rgba(209, 149, 249, 0.7));
+}
+
+.center-cropped {
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.cover {
+    height: 100%;
+}
+
+.hm-gradient {
+    background: linear-gradient(40deg, rgba(0, 51, 199, .3), rgba(209, 149, 249, .3));
+}
+
+.heading {
+    margin: 0 6rem;
+    font-weight: 700;
+    color: #5d4267;
+}
+
+.subheading {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    color: #bcb2c0;
+}
+
+.btn.btn-margin {
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+
+.btn.btn-lily {
+    background: linear-gradient(40deg, rgba(0, 51, 199, .7), rgba(209, 149, 249, .7));
+}
+
+.btn.btn-lily:hover {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+    color: #5d4267;
+}
+
+.subtitle {
+    color: #bcb2c0;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 6rem;
+}

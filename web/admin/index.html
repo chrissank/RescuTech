@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- SEO Section -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ResqU - Admin</title>
+    <!-- Bootstrap Base -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!-- MDBoostrap -->
+    <link href="https://cdn.mkn.cx/MDB/css/mdb.min.css" rel="stylesheet">
+    <!-- Fontawesome icons -->
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <!-- Index styling -->
+    <link href="../assets/css/index.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+	 <nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark z-depth-0" id="navbar">
+        <a class="navbar-brand" href="index.html">
+            ResQU
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        <i class="fas fa-cog"></i> Create
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<div class="container-fluid">
+		<div class="row mt-4 justify-content-center">
+			<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+				<div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Disaster Creation</h5>
+                        <div class="md-form">
+                            <input type="text" id="displayName" class="form-control">
+                            <label for="displayName">Disaster Display Name</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="text" id="disasterType" class="form-control">
+                            <label for="disasterType">Disaster Type</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="text" id="orgName" class="form-control">
+                            <label for="orgName">Organization Name</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="email" id="orgEmail" class="form-control">
+                            <label for="orgEmail">Organizer Email</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="password" id="orgPass" class="form-control">
+                            <label for="orgPass">Organizer Temp PW</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="text" id="operationArea" class="form-control">
+                            <label for="operationArea">Area of operation</label>
+                        </div>
+                        <div class="md-form">
+                            <input type="text" id="bcLocation" class="form-control">
+                            <label for="bcLocation">Base Camp Location (lat, long)</label>
+                        </div>
+                        <button class="btn btn-primary float-right" onclick="createUser()">Create</button>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdn.mkn.cx/MDB/js/mdb.min.js"></script>
+<!-- Custom functions or calls -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+<script src="admin.js"></script>
+</html>

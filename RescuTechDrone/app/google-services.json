@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "63539586922",
+    "firebase_url": "https://rescue-tech.firebaseio.com",
+    "project_id": "rescue-tech",
+    "storage_bucket": "rescue-tech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63539586922:android:c93db315ec860c1150a713",
+        "android_client_info": {
+          "package_name": "tech.resqu.drone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63539586922-rherknasp5q7skafpv4niolkvmh7drps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFsxbickoE_vH5mZLka_PRKTHqOp9zpi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63539586922-rherknasp5q7skafpv4niolkvmh7drps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
